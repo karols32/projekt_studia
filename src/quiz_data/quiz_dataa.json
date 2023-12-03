@@ -1,0 +1,62 @@
+{
+	"title": "Star Wars Themed Quiz",
+	"quizInfo": "Osiem, a teraz juz dziewiec epizodrow plus dwa filmy typu spin-off (watki poboczne) - Gwiezdne wojny` mocno nam sie rozbudowaly w porownaniu z wyjsciowa, trzyczesciowa saga George'a Lucasa. Oto trudny quiz na temat tej niezwyklej sagi",
+	"questions": [
+		{
+			"formula": "Kto jest mistrzem Yody?",
+			"answers": [
+				"a) Mace Windu",
+				"b) Ki-Adi-Mundi",
+				"c) Qui-Gon Jinn",
+				"d) N'Kata Del Gormo"
+			],
+			"correctAnswer": "d) N'Kata Del Gormo",
+			"timeSpent": 0
+		},
+		{
+			"formula": "Jak nazywa sie statek Han Solo?",
+			"answers": [
+				"a) Millennium Falcon",
+				"b) Star Destroyer",
+				"c) X-Wing",
+				"d) TIE Fighter"
+			],
+			"correctAnswer": "a) Millennium Falcon",
+			"timeSpent": 0
+		},
+		{
+			"formula": "Kto jest ojcem Luke'a Skywalkera?",
+			"answers": [
+				"a) Obi-Wan Kenobi",
+				"b) Anakin Skywalker",
+				"c) Yoda",
+				"d) Sheev Palpatine"
+			],
+			"correctAnswer": "b) Anakin Skywalker",
+			"timeSpent": 0
+		},
+		{
+			"formula": "Ktora planeta jest ojczyzna Chewbacci?",
+			"answers": ["a) Tatooine", "b) Hoth", "c) Endor", "d) Kashyyyk"],
+			"correctAnswer": "d) Kashyyyk",
+			"timeSpent": 0
+		},
+		{
+			"formula": "Jaki kolor ma miecz swietlny Mace Windu?",
+			"answers": ["a) Niebieski", "b) Czerwony", "c) Zielony", "d) Fioletowy"],
+			"correctAnswer": "d) Fioletowy",
+			"timeSpent": 0
+		},
+		{
+			"formula": "Kto był pierwotnym mistrzem Anakina Skywalkera ?",
+			"answers": [
+				"a) Obi-Wan Kenobi",
+				"b) Yoda",
+				"c) Qui-Gon Jinn",
+				"d) Mace Windu"
+			],
+			"correctAnswer": "c) Qui-Gon Jinn",
+			"timeSpent": 0
+		}
+	]
+}

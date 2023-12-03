@@ -1,0 +1,21 @@
+{
+  "name": "quiznew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --watch",
+    "start": "live-server public/",
+    "dev": "nodemon --watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "ts-node": {
+    "swc": true
+  }
+}

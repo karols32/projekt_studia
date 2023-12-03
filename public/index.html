@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h1 id="quizTitle"></h1>
+			<!-- Option 1 -->
+			<!-- <h3 id="quizInfo"></h3> -->
+			<!-- Option 1 -->
+			<!-- Option 2 -->
+			<section class="star-wars">
+				<div class="crawl">
+					<div id="quizInfo" class="title"></div>
+				</div>
+			</section>
+			<!-- Option 2 -->
+			<button id="start">Start</button>
+		</div>
+		<footer>
+			<div class="timeContainer" hidden>
+				<h4>
+					Czas: <span id="questionTime"></span
+					><span hidden class="loader"></span>
+				</h4>
+				<h5>Czas calkowity: <span id="totalTime"></span></h5>
+			</div>
+			<div id="question-container"></div>
+			<div class="buttonsContainer" hidden>
+				<button id="back" style="cursor: pointer" disabled>Poprzednie</button>
+				<button id="next" style="cursor: pointer" disabled>Nastepne</button>
+				<button id="end" disabled>Koniec</button>
+			</div>
+		</footer>
+
+		<script type="module" src="./index.js"></script>
+		<script type="module" src="./TimeFormatter.js"></script>
+	</body>
+</html>
