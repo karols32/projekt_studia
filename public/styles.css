@@ -1,0 +1,187 @@
+:root {
+    --yellow: #FFE81F;
+    --black: #000000;
+    font-family: 'Star Wars', sans-serif;
+    letter-spacing: 3px;
+    color: var(--yellow);
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://wallpapers.com/images/hd/star-wars-space-background-1920-x-1080-f1o3qr8zm0z4662c.jpg);
+    background-size: cover;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper[hidden]{
+    display: none;
+}
+
+#quizInfo{
+    text-align: center;
+    width: 60vw;
+}
+
+p{
+    font-weight: 500;
+    color: var(--black);
+    text-align: left;
+    padding: 10px;
+    background-color: var(--yellow);
+    width: 200px;
+    border: solid 3px var(--black);
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+p[clicked]{
+    background-color: var(--black);
+    border: solid 3px var(--yellow);
+    color: var(--yellow);;
+}
+
+p:hover{
+    opacity: 0.8;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+dialog p:hover{
+    opacity: 1.0;
+    transform: scale(1.0);
+    cursor: help;  
+}
+
+dialog{
+    background-color: pink;
+    height: 60vh;
+    width: 80vw;
+    overflow-y: scroll;
+}
+    
+
+
+#question-answer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border: solid 3px var(--black);
+    padding: 10px;
+}
+
+button[disabled]{
+    opacity: 0.1 !important;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* loader */
+.loader {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 10px solid;
+    border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  .loader[hidden]{
+    display: none;
+  }
+
+
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: -100px;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
